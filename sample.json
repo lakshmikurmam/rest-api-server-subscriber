@@ -1,0 +1,11 @@
+{
+    "Sync2Shore": [{
+            "Bearers": [{
+                "Type": "<satelite, mbb, wifi>",
+                "Priority": "67890"
+            }],
+            "PubOnMQTT": true
+        }
+
+    ]
+}
