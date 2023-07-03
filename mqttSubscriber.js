@@ -1,11 +1,21 @@
 const mqtt = require('mqtt');
+const username = 'gepc-subs-1';
+const password = '16bfb2d5c';
+const clientId = 'c1d9b92d-930a-4c67-9421-6588f1c584d4';
 
-const mqttBrokerUrl = 'mqtt://test.mosquitto.org:1883';
+//local test
+const Url1 = 'mqtt://test.mosquitto.org:1883';
+const Url = '10.246.0.10:1883';
 const mqttTopic = 'MC/V1/testing';
 
 // Create an MQTT client
-const mqttClient = mqtt.connect(mqttBrokerUrl);
-
+//local test
+const mqttClient = mqtt.connect(Url);
+//const mqttClient = mqtt.connect(`mqtt://${username}:${password}@${host}`, {
+// clientId,
+// clean: true,
+// rejectUnauthorized: false
+//});
 let latestMessage = null; // Variable to store the latest MQTT message
 
 // Subscribe to the MQTT topic
