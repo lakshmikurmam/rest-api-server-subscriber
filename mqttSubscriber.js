@@ -4,7 +4,7 @@ const password = '16bfb2d5c';
 const clientId = 'c1d9b92d-930a-4c67-9421-6588f1c584d4';
 
 //local test
-const Url1 = 'mqtt://test.mosquitto.org:1883';
+//const Url = 'mqtt://test.mosquitto.org:1883';
 const Url = '10.246.0.10:1883';
 const mqttTopic = 'MC/V1/testing';
 
